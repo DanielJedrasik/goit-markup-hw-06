@@ -442,6 +442,21 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <label for="newsletter-mail">Zapisz się do newslettera</label>
+          <div class="newsletter-position">
+            <input
+              type="email"
+              name="newsletter-mail"
+              placeholder="E-mail"
+              autocomplete="on"
+            />
+            <button type="submit" name="newsletter-submit">
+              Zapisz się
+              <svg><use href="./images/icons.svg#icon-form-send"></use></svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -451,6 +466,31 @@
             <use href="./images/icons.svg#icon-quit"></use>
           </svg>
         </button>
+        <form class="modal-form">
+          <fieldset class="modal-fieldset">
+            <legend class="modal-legend">
+              Zostaw swoje dane w formularzu poniżej
+            </legend>
+            <label for="modal-name">Imie</label>
+            <input type="text" name="modal-name" />
+            <label for="modal-phone-number">Telefon</label>
+            <input type="tel" name="modal-phone-number" />
+            <label for="modal-email">Email</label>
+            <input type="email" name="modal-email" />
+            <label for="modal-comment">Komentarz</label>
+            <input
+              type="textarea"
+              name="modal-comment"
+              class="modal-textarea-style"
+              placeholder="Wprowadź tekst"
+            />
+            <label>
+              <input type="checkbox" name="modal-privacy" />
+              Oświadczam iż akceptuję Regulamin i Politykę Prywatności
+            </label>
+            <button type="submit" name="modal-send">Wyślij</button>
+          </fieldset>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
