@@ -438,9 +438,6 @@ a.current::after {
   margin-left: 24px;
 }
 .footer-form {
-  width: 570px;
-  display: flex;
-  flex-direction: column;
   margin-left: 78px;
 }
 .footer-form label {
@@ -450,7 +447,8 @@ a.current::after {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--main-white-color);
-  margin-bottom: 24px;
+  margin-bottom: 20px;
+  display: block;
 }
 .footer-form input {
   width: 358px;
@@ -569,6 +567,10 @@ a.current::after {
   border-radius: 4px;
   text-align: center;
   margin: auto;
+  padding: 40px;
+}
+.modal-form-margin {
+  margin-top: 10px;
 }
 .is-hidden {
   visibility: hidden;
@@ -593,17 +595,12 @@ a.current::after {
   width: 18px;
   height: 18px;
 }
-.modal-form {
-  max-width: 448px;
-  margin: 0 auto;
-}
 .modal-fieldset {
   width: 100%;
   border: none;
   display: flex;
   flex-direction: column;
   text-align: left;
-  margin-top: 40px;
   padding: 0;
 }
 .modal-legend {
@@ -631,7 +628,6 @@ a.current::after {
   font-size: 12px;
   line-height: 1.2;
   letter-spacing: 0.01em;
-  margin-top: 10px;
   margin-bottom: 4px;
 }
 .modal-box {
